@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public class UtilsServlet {
 
-    public static Optional<Usuario> validaGrabar(HttpServletRequest request){
+    public static Optional<Usuario> validaGrabarUsuario(HttpServletRequest request){
 
         String nombreUsuario = null;
         String contraseña = null;

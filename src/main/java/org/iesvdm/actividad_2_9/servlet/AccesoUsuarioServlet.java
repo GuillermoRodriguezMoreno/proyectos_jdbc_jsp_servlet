@@ -1,5 +1,6 @@
 package org.iesvdm.actividad_2_9.servlet;
 
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -13,38 +14,41 @@ import org.iesvdm.actividad_2_9.models.Usuario;
 import java.io.IOException;
 import java.util.Optional;
 
-@WebServlet(name = "GrabarUsuarioServlet", value = "/GrabarUsuarioServlet")
-public class GrabaUsuarioServlet extends HttpServlet {
+@WebServlet(name = "AccesoUsuarioServlet", value = "/AccesoUsuarioServlet")
+public class AccesoUsuarioServlet extends HttpServlet {
 
     private UsuarioDAO usuarioDAO = new UsuarioDAOImpl();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
-        dispatcher.forward(request, response);
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Optional<Usuario> optUser = UtilsServlet.validaGrabarUsuario(request);
+        String error = "";
 
         RequestDispatcher dispatcher = null;
 
-        Optional<Usuario> optUsuario = UtilsServlet.validaGrabarUsuario(request);
+        if (optUser.isPresent()){
 
-        if(optUsuario.isPresent()){
+            Usuario usuario = optUser.get();
 
-            Usuario usuario = optUsuario.get();
+            optUser = usuarioDAO.find(usuario.getUsuario());
 
-            this.usuarioDAO.create(usuario);
+            if(optUser.isPresent()){
 
-            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/accesoPermitido.jsp");
+                request.setAttribute("usuario", optUser.get());
+                dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/accesoPermitido.jsp");
+
+            } else{
+
+                error = "El Usuario no existe";
+                request.setAttribute("error", error);
+                dispatcher = request.getRequestDispatcher("/index.jsp");
+            }
+
 
         }else {
 
             dispatcher = request.getRequestDispatcher("/index.jsp");
-
         }
 
         dispatcher.forward(request, response);

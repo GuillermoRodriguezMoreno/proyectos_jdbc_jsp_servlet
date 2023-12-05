@@ -10,7 +10,7 @@
 
         <h1>Control de acceso</h1>
 
-        <form action="GrabarUsuarioServlet" method="post">
+        <form action="AccesoUsuarioServlet" method="get">
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="password" name="contraseña" placeholder="Contraseña">
             <input type="submit" value="ACEPTAR">

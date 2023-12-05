@@ -10,31 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="668d2b3c-9b82-47dc-8adf-2ed626a40109" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/dao/AbstractDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/dao/UsuarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/dao/UsuarioDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/models/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/GrabaUsuarioServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/UtilsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/accesoPermitido.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-j-8.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/AccesoUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/GrabaUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/GrabaUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/UtilsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/UtilsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/accesoPermitido.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/accesoPermitido.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,9 +42,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2Z2gNTnu1BiFOIbqqW9Srne0QXe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -88,6 +71,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "3100e8ed-78a3-4be1-aee3-7db4814028d5"
     ]
   }
 }]]></component>
@@ -103,7 +89,13 @@
       <recent name="org.iesvdm.actividad_2_9.dao" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Database Script.users.sql">
+    <configuration name="users.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/users.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="3100e8ed-78a3-4be1-aee3-7db4814028d5" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Actividad_2.9" />
       <method v="2">
@@ -173,6 +165,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.users.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -183,21 +180,11 @@
       <option name="presentableId" value="Default" />
       <updated>1701625549565</updated>
       <workItem from="1701625550603" duration="6171000" />
+      <workItem from="1701767794846" duration="2463000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/actividad_2_9/servlet/GrabaUsuarioServlet.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
